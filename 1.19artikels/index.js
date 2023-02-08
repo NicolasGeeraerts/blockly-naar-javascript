@@ -10,7 +10,7 @@ while (naam !== "stop") {
     naam = prompt("Naam");
 }
 const opzoekking = prompt("welk artikel zoekt u ")
-const opgezochteArtikels = artikels.filter(artikel => artikel.naam === opzoekking);
+const opgezochteArtikels = artikels.filter(artikel => artikel.naam.startsWith(opzoekking));
 opgezochteArtikels.forEach(artikel => console.log(artikel.naam));
 const getal1 = Number(prompt("verkoopprijs opzoeken van ?"))
 const getal2 = Number(prompt("tot"))
