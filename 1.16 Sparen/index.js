@@ -1,23 +1,6 @@
 "use strict";
-const woord = prompt("typt een woord");
-const len = woord.length;
-
-
-for (let i = 0; i < len / 2; i++) {  
-if (woord[i] !== woord[len - 1 - i]) {  
-    alert( 'It is not a palindrome');  
-}  
-
-alert( 'It is a palindrome');  
-}  
-
-
-
-
-
-
-
-
-
-
-
+const mensen =[{ naam: "Georges", spaargeld: 1500 },
+{ naam: "Jules", spaargeld: 700 },
+{ naam: "Jacques", spaargeld: 2000 }]
+mensen.filter(persoon => persoon.spaargeld > 1000)
+.forEach(persoon => console.log(persoon.naam, persoon.spaargeld));
